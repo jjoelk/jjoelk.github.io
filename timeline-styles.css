@@ -1,0 +1,378 @@
+/* CSS Variables and Reset */
+:root {
+    /* Color Palette */
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #1a1a24;
+    --text-primary: #e4e4e7;
+    --text-secondary: #a1a1aa;
+    --accent-primary: #3b82f6;
+    --accent-secondary: #8b5cf6;
+    --accent-tertiary: #ec4899;
+    --gradient-1: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    --gradient-2: linear-gradient(135deg, var(--accent-secondary), var(--accent-tertiary));
+    --border-color: rgba(255, 255, 255, 0.1);
+    --glow-color: rgba(59, 130, 246, 0.5);
+    
+    /* Typography */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    
+    /* Animation */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+}
+
+/* Timeline Container */
+.timeline-container {
+    max-width: 800px;
+    width: 100%;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.timeline-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2xl);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: var(--space-2xl);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, 
+        transparent 0%,
+        var(--accent-primary) 10%,
+        var(--accent-secondary) 50%,
+        var(--accent-tertiary) 90%,
+        transparent 100%
+    );
+    animation: lineReveal 1.5s ease-out forwards;
+}
+
+@keyframes lineReveal {
+    from {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    to {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+/* Timeline Year */
+.timeline-year {
+    margin-bottom: var(--space-2xl);
+    opacity: 0;
+    animation: yearReveal 0.6s ease-out forwards;
+}
+
+.timeline-year:nth-child(1) { animation-delay: 0.2s; }
+.timeline-year:nth-child(2) { animation-delay: 0.4s; }
+.timeline-year:nth-child(3) { animation-delay: 0.6s; }
+.timeline-year:nth-child(4) { animation-delay: 0.8s; }
+.timeline-year:nth-child(5) { animation-delay: 1s; }
+
+@keyframes yearReveal {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Year Header */
+.year-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    cursor: pointer;
+    padding: var(--space-md);
+    margin-left: calc(-1 * var(--space-md));
+    border-radius: 8px;
+    transition: var(--transition-base);
+}
+
+.year-header:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.year-marker {
+    position: absolute;
+    left: -14px;
+    width: 28px;
+    height: 28px;
+    background: var(--bg-primary);
+    border: 2px solid var(--accent-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-base);
+    z-index: 1;
+}
+
+.timeline-year:hover .year-marker {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+.year-number {
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+}
+
+.year-title {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-base);
+}
+
+.expand-btn:hover {
+    color: var(--accent-primary);
+}
+
+.expand-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.timeline-year.expanded .expand-btn svg {
+    transform: rotate(180deg);
+}
+
+/* Year Content */
+.year-content {
+    margin-top: var(--space-lg);
+    margin-left: var(--space-lg);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.timeline-year.expanded .year-content {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+/* Milestones */
+.milestone {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    position: relative;
+    transition: var(--transition-base);
+    transform: translateX(0);
+}
+
+.milestone::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-lg) - 1px);
+    top: 50%;
+    width: var(--space-lg);
+    height: 1px;
+    background: var(--border-color);
+    opacity: 0.5;
+}
+
+.milestone:hover {
+    transform: translateX(4px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.milestone-icon {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    height: 3rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 8px;
+}
+
+.milestone-details h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.milestone-details p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+.milestone-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-secondary);
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: var(--transition-base);
+}
+
+.tag:hover {
+    border-color: var(--accent-secondary);
+    transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: var(--space-md);
+    }
+
+    .timeline {
+        padding-left: var(--space-lg);
+    }
+
+    .year-header {
+        flex-wrap: wrap;
+    }
+
+    .year-title {
+        font-size: 1.25rem;
+    }
+
+    .milestone {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .milestone-icon {
+        align-self: flex-start;
+    }
+
+    .milestone::before {
+        display: none;
+    }
+}
+
+/* Loading Animation */
+.timeline-year {
+    position: relative;
+}
+
+.timeline-year::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        rgba(59, 130, 246, 0.1) 50%,
+        transparent 100%
+    );
+    animation: shimmer 2s infinite;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.timeline-year:hover::after {
+    opacity: 1;
+}
+
+@keyframes shimmer {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
