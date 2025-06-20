@@ -3,966 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Security Engineer Portfolio - Specializing in enterprise security, penetration testing, and cloud security automation">
-    <title>Jeremyah Joel - Security Engineer</title>
+    <meta name="description" content="Jeremyah Joel - Staff Security Engineer">
+    <title>Jeremyah Joel</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">JJ</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#timeline" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <main>
+        <header>
+            <h1>Jeremyah Joel</h1>
+            <p>Staff Security Engineer @ DKATALIS</p>
+            <p>Previously: GovTech (53M users), GoTO (30M users)</p>
+            <p>joeljeremyah@gmail.com | <a href="https://www.linkedin.com/in/jeremyahjoel">linkedin</a> | <a href="https://jo14.medium.com">writing</a></p>
+        </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb gradient-1"></div>
-            <div class="gradient-orb gradient-2"></div>
-            <div class="gradient-orb gradient-3"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="hero-greeting">Hello, I'm</span>
-                <span class="hero-name">Jeremyah Joel</span>
-            </h1>
-            <h2 class="hero-subtitle">Security Research & Innovation</h2>
-            <p class="hero-description">Pioneering next-generation security solutions through AI research, 0-day discoveries, and large-scale engineering</p>
+        <section id="current">
+            <h2>$ whoami</h2>
+            <p>I break things professionally, then fix them. Currently stopping fraud at Bank Jago. Previously kept 53M government users secure.</p>
+            <p>OSCP/OSWE certified. Built systems processing 500GB+ threat data daily. Found bugs Google didn't know about.</p>
+        </section>
+
+
+        <section id="writing">
+            <h2>$ cat /writing</h2>
             
-            <!-- Quick Credentials -->
-            <div class="hero-credentials">
-                <span class="credential-tag">OSWE</span>
-                <span class="credential-tag">OSCP</span>
-                <span class="credential-tag">CREST CRT</span>
-                <span class="credential-divider">•</span>
-                <span class="credential-tag">MBA</span>
-                <span class="credential-tag">GCP Security</span>
-                <span class="credential-tag">Financial Services</span>
+            <div class="post">
+                <strong>2024-10-15</strong> | <a href="https://medium.com/govtech-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14">Google Cloud Armor 0-Day Discovery</a>
+                <br>Found critical HTTP/2 vuln affecting all Cloud Armor users. Google patched it.
             </div>
+
+            <div class="post">
+                <strong>2024-08-22</strong> | <a href="https://jo14.medium.com/beyond-sast-building-a-multi-llm-judge-for-context-aware-security-analysis-86f6783e661d">Multi-LLM Security Analysis</a>
+                <br>Why SAST sucks and how AI can fix false positives.
+            </div>
+
+            <div class="post">
+                <strong>2024-06-10</strong> | <a href="https://medium.com/govtech-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c">Detection Engineering at Scale</a>
+                <br>Building detection systems for government platforms.
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>$ ls -la /projects</h2>
             
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Security Innovation at Scale</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        I bridge the gap between cutting-edge security research and real-world implementation, 
-                        transforming complex security challenges into scalable solutions that protect millions of users.
-                    </p>
-                    <p>
-                        My approach combines deep technical expertise in offensive security and AI research with the strategic 
-                        vision needed to secure critical infrastructure. From discovering 0-day vulnerabilities that impact 
-                        global cloud platforms to pioneering AI-powered security analysis, I focus on innovations that 
-                        fundamentally advance the security field.
-                    </p>
-                    <p>
-                        Whether it's engineering detection systems that process 500GB+ of threat data daily, developing 
-                        novel DDoS mitigation techniques using SSL/TLS fingerprinting, or creating multi-LLM security 
-                        analysis frameworks, I specialize in building solutions that operate at the intersection of 
-                        research and enterprise-scale impact.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline-section">
-        <div class="container">
-            <h2 class="section-title">Innovation Timeline</h2>
-            <p class="timeline-subtitle">Key Technical Contributions & Research Breakthroughs</p>
-            
-            <div class="interactive-timeline">
-                <!-- 2025 -->
-                <div class="timeline-year" data-year="2025">
-                    <div class="year-header">
-                        <div class="year-marker">
-                            <span class="year-number">2025</span>
-                        </div>
-                        <h3 class="year-title">AI-Powered Security Research</h3>
-                        <button class="expand-btn" aria-label="Expand 2025">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <div class="year-content">
-                        <div class="milestone">
-                            <div class="milestone-icon">🤖</div>
-                            <div class="milestone-details">
-                                <h4>Multi-LLM Security Analysis Judge</h4>
-                                <p>Developed AI-powered security testing system using multiple LLMs to eliminate false positives and provide context-aware vulnerability analysis. Built during holiday break to solve persistent SAST false positive problems.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">LLM Integration</span>
-                                    <span class="tag">Security Analysis</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🔬</div>
-                            <div class="milestone-details">
-                                <h4>Enterprise Reverse Engineering & Anti-Fraud Research</h4>
-                                <p>Advanced research in financial malware analysis, APT attribution, and LLM security. Developing novel techniques for enterprise-scale threat analysis and AI safety in financial services.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Reverse Engineering</span>
-                                    <span class="tag">LLM Security</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2024 -->
-                <div class="timeline-year" data-year="2024">
-                    <div class="year-header">
-                        <div class="year-marker">
-                            <span class="year-number">2024</span>
-                        </div>
-                        <h3 class="year-title">0-Day Research & Protocol Analysis</h3>
-                        <button class="expand-btn" aria-label="Expand 2024">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <div class="year-content">
-                        <div class="milestone">
-                            <div class="milestone-icon">☁️</div>
-                            <div class="milestone-details">
-                                <h4>Google Cloud Armor 0-Day Discovery</h4>
-                                <p>Discovered critical vulnerability in Google Cloud Armor WAF that could bypass security controls, leading to global security patch. Featured in GovTech Edu publication detailing the discovery process.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">0-Day Research</span>
-                                    <span class="tag">WAF Bypass</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🕵️</div>
-                            <div class="milestone-details">
-                                <h4>Threat Intelligence Platform Development</h4>
-                                <p>Built enterprise-grade security platform with collaborators that identifies exposed credentials and attack vectors using advanced data processing, handling 500GB+ daily processing.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Threat Intelligence</span>
-                                    <span class="tag">Data Pipeline</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🛡️</div>
-                            <div class="milestone-details">
-                                <h4>JA3-Based Anti-DDoS System</h4>
-                                <p>Developed innovative DDoS mitigation approach using JA3 fingerprinting to block 100M+ RPS attacks at GovTech Edu platform. Contributed to Terraform GCP provider for JA3 support.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">DDoS Mitigation</span>
-                                    <span class="tag">Open Source</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2023 -->
-                <div class="timeline-year" data-year="2023">
-                    <div class="year-header">
-                        <div class="year-marker">
-                            <span class="year-number">2023</span>
-                        </div>
-                        <h3 class="year-title">Detection Engineering Innovation</h3>
-                        <button class="expand-btn" aria-label="Expand 2023">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <div class="year-content">
-                        <div class="milestone">
-                            <div class="milestone-icon">🔧</div>
-                            <div class="milestone-details">
-                                <h4>Strategic Detection Engineering Guide</h4>
-                                <p>Published comprehensive guide on building detection engineering capabilities for cloud security in government applications, featuring real-world implementations at GovTech Edu.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Detection Engineering</span>
-                                    <span class="tag">Technical Writing</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🏫</div>
-                            <div class="milestone-details">
-                                <h4>Large-Scale Security Engineering (53M+ Users)</h4>
-                                <p>Architected security solutions for massive government platforms with limited resources. Pioneered efficient security tooling and frameworks that scale across multiple priority programs.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Scale Engineering</span>
-                                    <span class="tag">Resource Optimization</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🔍</div>
-                            <div class="milestone-details">
-                                <h4>Advanced Security Detection Systems</h4>
-                                <p>Built innovative SQL Injection detection system that identified 250+ critical vulnerabilities and established comprehensive CTI system preventing unauthorized access to government platforms.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Vulnerability Detection</span>
-                                    <span class="tag">CTI Systems</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2022 -->
-                <div class="timeline-year" data-year="2022">
-                    <div class="year-header">
-                        <div class="year-marker">
-                            <span class="year-number">2022</span>
-                        </div>
-                        <h3 class="year-title">Financial Security Architecture</h3>
-                        <button class="expand-btn" aria-label="Expand 2022">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <div class="year-content">
-                        <div class="milestone">
-                            <div class="milestone-icon">🏗️</div>
-                            <div class="milestone-details">
-                                <h4>Security Asset Management Dashboard - GoJek</h4>
-                                <p>Built comprehensive security visibility platform integrating cloud infrastructure and API gateway data for post-merger asset management, providing critical security insights during expansion.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Asset Management</span>
-                                    <span class="tag">Dashboard Development</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">📊</div>
-                            <div class="milestone-details">
-                                <h4>"Security by Numbers" Metrics Innovation</h4>
-                                <p>Pioneered quantitative security measurement framework for financial platforms at scale. Developed novel metrics for measuring security posture across microservices architectures serving 30M+ users.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Security Metrics</span>
-                                    <span class="tag">Financial Innovation</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🔄</div>
-                            <div class="milestone-details">
-                                <h4>Automated Security Pipeline Architecture</h4>
-                                <p>Engineered CI/CD security automation integrating SAST, DAST, and dependency scanning. Reduced security review cycles by 80% while maintaining compliance for post-merger financial infrastructure.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">DevSecOps Innovation</span>
-                                    <span class="tag">Automation Architecture</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2021 -->
-                <div class="timeline-year" data-year="2021">
-                    <div class="year-header">
-                        <div class="year-marker">
-                            <span class="year-number">2021</span>
-                        </div>
-                        <h3 class="year-title">Offensive Security Mastery</h3>
-                        <button class="expand-btn" aria-label="Expand 2021">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                    </div>
-                    
-                    <div class="year-content">
-                        <div class="milestone">
-                            <div class="milestone-icon">🎯</div>
-                            <div class="milestone-details">
-                                <h4>OSCP Perfect Score Achievement</h4>
-                                <p>Earned OSCP certification with perfect score, demonstrating advanced penetration testing skills across complex network infrastructures and privilege escalation techniques.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">OSCP</span>
-                                    <span class="tag">Perfect Score</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🏦</div>
-                            <div class="milestone-details">
-                                <h4>Vantage Point Security Consulting</h4>
-                                <p>Delivered comprehensive security assessments for 10+ banking and financial institutions. Discovered critical vulnerabilities in Indonesian regulatory infrastructure, improving nationwide banking security.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">Banking Security</span>
-                                    <span class="tag">Penetration Testing</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="milestone">
-                            <div class="milestone-icon">🥇</div>
-                            <div class="milestone-details">
-                                <h4>CTF Competition Leadership</h4>
-                                <p>Led consultant team to victories in multiple CTF and security hackathons including BPJS Kesehatan Security Hackathon (Runner Up) and specialized in web application/API security assessments.</p>
-                                <div class="milestone-tags">
-                                    <span class="tag">CTF Leadership</span>
-                                    <span class="tag">Web Security</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Work</h2>
-            <div class="projects-grid">
-                <!-- Project Card 1 - Article -->
-                <article class="project-card" data-project="1">
-                    <div class="project-header">
-                        <h3>Cloud Detection Engineering</h3>
-                        <span class="project-type article">Published Work</span>
-                    </div>
-                    <p class="project-summary">Comprehensive guide on building detection engineering capabilities for cloud security in government applications, featuring real-world implementations.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Detection Engineering</span>
-                        <span class="tech-tag">Google Cloud</span>
-                        <span class="tech-tag">Security Monitoring</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Enterprise Security</span>
-                        <span class="metric">Cloud Security</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Project Card 2 - Article -->
-                <article class="project-card" data-project="2">
-                    <div class="project-header">
-                        <h3>Google Cloud Armor 0-Day Discovery</h3>
-                        <span class="project-type article">Published Work</span>
-                    </div>
-                    <p class="project-summary">Discovered critical vulnerability in Google Cloud Armor WAF that could bypass security controls, leading to global security patch.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Cloud Security</span>
-                        <span class="tech-tag">0-Day Research</span>
-                        <span class="tech-tag">WAF Bypass</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Cloud Security</span>
-                        <span class="metric">Enterprise Security</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Project Card 3 - Personal Project -->
-                <article class="project-card" data-project="3">
-                    <div class="project-header">
-                        <h3>Threat Intelligence Platform</h3>
-                        <span class="project-type public">Personal Project</span>
-                    </div>
-                    <p class="project-summary">Built enterprise-grade security platform that identifies exposed credentials and attack vectors using advanced data processing.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Threat Intelligence</span>
-                        <span class="tech-tag">Data Pipeline</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Product Development</span>
-                        <span class="metric">Internal Tooling</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Project Card 4 - Personal Project -->
-                <article class="project-card" data-project="4">
-                    <div class="project-header">
-                        <h3>Multi-LLM Security Analysis Judge</h3>
-                        <span class="project-type public">Personal Project</span>
-                    </div>
-                    <p class="project-summary">AI-powered security testing system using multiple LLMs to eliminate false positives and provide context-aware vulnerability analysis.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Security Analysis</span>
-                        <span class="tech-tag">LLM Integration</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Product Development</span>
-                        <span class="metric">DevSecOps</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Project Card 5 - Enterprise Project -->
-                <article class="project-card" data-project="5">
-                    <div class="project-header">
-                        <h3>JA3-Based Anti-DDoS System</h3>
-                        <span class="project-type enterprise">Enterprise</span>
-                    </div>
-                    <p class="project-summary">Developed innovative DDoS mitigation approach using JA3 fingerprinting to block 100M+ RPS attacks at GovTech Edu platform.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">DDoS Mitigation</span>
-                        <span class="tech-tag">Google Cloud Armor</span>
-                        <span class="tech-tag">Terraform</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Cloud Security</span>
-                        <span class="metric">Enterprise Security</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Project Card 6 - Enterprise Project -->
-                <article class="project-card" data-project="6">
-                    <div class="project-header">
-                        <h3>Security Asset Management Dashboard</h3>
-                        <span class="project-type enterprise">Enterprise</span>
-                    </div>
-                    <p class="project-summary">Built comprehensive security visibility platform integrating cloud infrastructure and API gateway data for post-merger asset management at GoJek.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Asset Management</span>
-                        <span class="tech-tag">Dashboard</span>
-                        <span class="tech-tag">GCP Integration</span>
-                    </div>
-                    <div class="project-metrics">
-                        <span class="metric">Enterprise Security</span>
-                        <span class="metric">Internal Tooling</span>
-                    </div>
-                    <button class="project-details-btn" aria-label="View project details">View Details</button>
-                </article>
-
-                <!-- Copy and paste the template above to add more project cards -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Details Modal -->
-    <div class="modal" id="projectModal" aria-hidden="true">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            
-            <div class="modal-body">
-                <!-- Dynamic content will be inserted here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-text">
-                    I'm always interested in discussing security challenges, collaboration opportunities, 
-                    or just having a conversation about the latest in cybersecurity.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:joeljeremyah@gmail.com" class="contact-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener" class="contact-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://jo14.medium.com" target="_blank" rel="noopener" class="contact-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                        </svg>
-                        Medium
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2025 Jeremyah Joel. Security Research & Innovation.</p>
-                </div>
-                <div class="footer-built">
-                    <p>Designed for impact, built for scale.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Navbar background on scroll
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
-            }
-        });
-
-        // Active navigation highlighting
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Timeline expand/collapse functionality with error handling
-        try {
-            document.querySelectorAll('.year-header').forEach(header => {
-                // Make it keyboard accessible
-                header.setAttribute('tabindex', '0');
-                header.setAttribute('role', 'button');
-                header.setAttribute('aria-expanded', 'false');
-                header.setAttribute('aria-label', 'Expand year details');
+            <div class="project">
+                <h3>threat-intel-platform <span class="metric">500GB+/day</span> <button class="toggle-btn" data-project="threat-intel">[+]</button></h3>
+                <p>Built distributed CTI system with collaborators. Processes credential dumps, identifies exposures, prevents breaches. Found entire org's VPN creds in paste before attackers did.</p>
+                <p><strong>Stack:</strong> Python, distributed queues, NLP classification</p>
+                <p><strong>Impact:</strong> Processes 500GB+ daily, prevented multiple unauthorized access attempts</p>
                 
-                const handleToggle = () => {
-                    try {
-                        const timelineYear = header.parentElement;
-                        const isExpanded = timelineYear.classList.contains('expanded');
-                        
-                        // Collapse all other years and update their aria-expanded
-                        document.querySelectorAll('.timeline-year').forEach(year => {
-                            year.classList.remove('expanded');
-                            const yearHeader = year.querySelector('.year-header');
-                            if (yearHeader) {
-                                yearHeader.setAttribute('aria-expanded', 'false');
-                                yearHeader.setAttribute('aria-label', 'Expand year details');
-                            }
-                        });
-                        
-                        // Toggle current year
-                        if (!isExpanded) {
-                            timelineYear.classList.add('expanded');
-                            header.setAttribute('aria-expanded', 'true');
-                            header.setAttribute('aria-label', 'Collapse year details');
-                            
-                            // Smooth scroll to the expanded section
-                            setTimeout(() => {
-                                timelineYear.scrollIntoView({ 
-                                    behavior: 'smooth', 
-                                    block: 'nearest' 
-                                });
-                            }, 100);
-                        }
-                    } catch (error) {
-                        console.warn('Timeline toggle error:', error);
-                    }
-                };
-                
-                header.addEventListener('click', handleToggle);
-                header.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        handleToggle();
-                    }
-                });
-            });
-        } catch (error) {
-            console.warn('Timeline initialization error:', error);
-        }
-
-        // Auto-expand first year on load (with user preference check)
-        window.addEventListener('load', () => {
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            const firstYear = document.querySelector('.timeline-year');
-            
-            if (firstYear) {
-                const delay = prefersReducedMotion ? 100 : 1000;
-                setTimeout(() => {
-                    firstYear.classList.add('expanded');
-                    firstYear.querySelector('.year-header').setAttribute('aria-expanded', 'true');
-                }, delay);
-            }
-        });
-
-        // Animate skill bars when in viewport (with reduced motion support)
-        const observerOptions = {
-            threshold: 0.3,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const skillBars = entry.target.querySelectorAll('.skill-progress');
-                    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                    
-                    skillBars.forEach((bar, index) => {
-                        const progress = bar.getAttribute('data-progress');
-                        const delay = prefersReducedMotion ? 0 : index * 150;
-                        
-                        setTimeout(() => {
-                            bar.style.width = progress + '%';
-                        }, delay);
-                    });
-                    skillObserver.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe skill categories
-        document.querySelectorAll('.skill-category-card').forEach(card => {
-            skillObserver.observe(card);
-        });
-
-        // Improve mobile touch interactions
-        if ('ontouchstart' in window) {
-            document.querySelectorAll('.certification-card, .project-card, .tool-tag').forEach(card => {
-                card.addEventListener('touchstart', function() {
-                    this.style.transform = 'scale(0.98)';
-                });
-                
-                card.addEventListener('touchend', function() {
-                    this.style.transform = '';
-                });
-            });
-        }
-
-        // Add loading state feedback
-        document.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.add('loaded');
-        });
-        // Project modal functionality
-        const projectCards = document.querySelectorAll('.project-card');
-        const modal = document.getElementById('projectModal');
-        const modalBody = modal.querySelector('.modal-body');
-        const modalClose = modal.querySelector('.modal-close');
-        const modalBackdrop = modal.querySelector('.modal-backdrop');
-
-        // Project data - Based on your security engineering experience
-        const projectData = {
-            '1': {
-                name: 'Strategic Detection Engineering: Enhancing Cloud Security for Government Applications',
-                type: 'article',
-                overview: 'Published a comprehensive technical article on Medium\'s GovTech Edu publication detailing the implementation of detection engineering strategies for securing government cloud applications. The article covers practical approaches to identifying and mitigating security threats in legacy systems undergoing digital transformation, with a focus on budget-conscious solutions.',
-                challenge: 'Government systems undergoing digital transformation presented unique challenges: aging infrastructure with limited visibility, budgetary constraints, and the critical need to maintain security while modernizing. Traditional security approaches were insufficient for protecting these systems against modern threats.',
-                approach: 'Developed a detection engineering strategy leveraging offensive security insights to create pattern recognition systems. Implemented real-time monitoring across all endpoints using Google Cloud\'s logging infrastructure, focusing on broken access control, SQL injection, and remote code execution detection. Created custom alerting mechanisms integrated with existing systems.',
-                technologies: ['Google Cloud Platform', 'Security Command Center', 'Ops Agent', 'SQL Injection Detection', 'auditd', 'stderr/stdout Logging'],
-                achievements: [
-                    'Successfully detected and remediated multiple high-risk vulnerabilities in production',
-                    'Enhanced security posture for 53M+ government platform users',
-                    'Implemented cost-effective security monitoring within budget constraints',
-                    'Published as featured article in GovTech Edu Medium publication'
-                ],
-                skills: ['Detection Engineering', 'Cloud Security', 'Technical Writing', 'Security Architecture'],
-                links: {
-                    article: 'https://medium.com/govtech-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c'
-                }
-            },
-            '2': {
-                name: 'Proactive Cloud Security: Learning from Google Cloud Armor Vulnerability Discovery',
-                type: 'article',
-                overview: 'Published a detailed technical analysis of a critical vulnerability discovered in Google Cloud Armor that could bypass WAF protections. The article documents the discovery process, root cause analysis, and collaboration with Google\'s security team that led to a global security patch. This finding demonstrated how HTTP/2 protocol handling discrepancies could be exploited to bypass security controls.',
-                challenge: 'During routine security monitoring at GovTech Edu, we observed anomalous behavior where identical payloads were receiving both 403 (blocked) and 200 (OK) responses. This inconsistency suggested that Cloud Armor\'s filtering mechanisms were not consistently applying security policies, potentially allowing malicious requests to bypass protections.',
-                approach: 'Conducted months-long investigation analyzing logs, testing across different tech stacks, and isolating the conditions for bypass. Discovered that HTTP/2 requests with whitespace after parameter values could bypass any Preconfigured WAF rule when using GET methods on workloads behind Classic Application Load Balancer. Developed proof-of-concept and reported through Google\'s responsible disclosure process.',
-                technologies: ['Google Cloud Armor', 'HTTP/2 Protocol Analysis', 'WAF Bypass Research', 'Go vs PHP/Python', 'Cloud Security', 'GFEv2'],
-                achievements: [
-                    'Discovered critical 0-day affecting all Google Cloud Armor users globally',
-                    'Google released security patch within 3 months of report',
-                    'Vulnerability allowed bypass of any ModSecurity rule in Cloud Armor',
-                    'Demonstrated importance of anomaly investigation in cloud security'
-                ],
-                skills: ['Vulnerability Research', 'Cloud Security', 'Responsible Disclosure', 'Technical Writing'],
-                links: {
-                    article: 'https://medium.com/govtech-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14'
-                }
-            },
-            '3': {
-                name: 'Threat Intelligence Platform Development',
-                type: 'personal',
-                overview: 'Developed a comprehensive Cyber Threat Intelligence and Attack Surface Management platform inspired by enterprise solutions but designed for individual researchers and smaller teams. The platform processes an average of 500GB daily (peaks at 3TB) to identify exposed credentials, attack vectors, and security risks that have been actively exploited in recent ransomware incidents.',
-                challenge: 'Commercial CTI/ASM platforms dominated security conferences in 2024, but their enterprise-focused pricing made them inaccessible to individual researchers and smaller teams. The challenge was building a scalable solution that could handle massive data volumes while providing actionable intelligence comparable to enterprise platforms.',
-                approach: 'Collaborated with Abdillah Muhamad Alhasni and Leonardo Saputra to build a modular system with three core components: a data ingestion engine with load-balanced workers and custom NLP modules for classification, a discovery pipeline for automated source monitoring and collection, and an analysis engine for credential validation and relationship mapping. Implemented efficient queuing and load balancing to manage high-volume data streams.',
-                technologies: ['Python', 'NLP Classification', 'Data Pipeline Architecture', 'Load Balancing', 'Queue Management', 'Temporal Analysis'],
-                achievements: [
-                    'Processes 500GB+ daily with peaks at 3TB using efficient data pipelines',
-                    'Helped multiple organizations identify exposed VPN credentials and compromised admin access',
-                    'Enabled proactive security measures preventing potential unauthorized access',
-                    'Built scalable architecture handling 790k+ records in single searches'
-                ],
-                skills: ['Data Engineering', 'Threat Intelligence', 'Security Automation', 'Large-scale Processing'],
-                links: {
-                    article: 'https://www.linkedin.com/feed/update/urn:li:activity:7293570745274707976/'
-                }
-            },
-            '4': {
-                name: 'Beyond SAST: Building a Multi-LLM Judge for Context-Aware Security Analysis',
-                type: 'personal',
-                overview: 'Developed an innovative security analysis system during holiday break that addresses the persistent problem of false positives in traditional SAST tools. The system uses multiple large language models in a judge architecture to provide context-aware vulnerability analysis, tracing data flows across entire codebases and producing actionable security tickets with exploitation paths.',
-                challenge: 'Traditional SAST tools flood security teams with false positives, creating "security fatigue" where teams start ignoring alerts altogether. These tools flag issues without understanding execution paths, data flows, or actual exploitability, leaving teams to manually verify hundreds of generic warnings like "dangerous eval function" without context.',
-                approach: 'Built a four-component pipeline: Claude Code analyzes entire codebase and traces data flows, DeepSeek and OpenAI models independently assess vulnerabilities, and Claude API acts as judge to synthesize findings. Instead of vague alerts, the system produces detailed tickets with exploitation paths, constructed HTTP requests for verification, and specific remediation steps.',
-                technologies: ['Claude Code API', 'DeepSeek LLM', 'OpenAI GPT', 'Python', 'Static Analysis', 'Multi-LLM Architecture'],
-                achievements: [
-                    'Successfully tested against OWASP NodeGoat and Juice Shop applications',
-                    'Identified sophisticated vulnerabilities while filtering out noise',
-                    'Generated JIRA-ready security tickets with detailed remediation steps',
-                    'Demonstrated context-aware analysis across microservices boundaries'
-                ],
-                skills: ['AI/LLM Integration', 'Security Analysis', 'Innovation', 'Python Development'],
-                links: {
-                    github: 'https://github.com/jjoelk/sast-llm-judge',
-                    article: 'https://jo14.medium.com/beyond-sast-building-a-multi-llm-judge-for-context-aware-security-analysis-86f6783e661d'
-                }
-            },
-            '5': {
-                name: 'JA3-Based Anti-DDoS System - GovTech Edu',
-                type: 'enterprise',
-                overview: 'Developed an innovative DDoS mitigation approach for Kemendikbudristek/GovTech Edu platform using JA3 fingerprinting technology. When the platform came under attack with 100 million RPS from 20,000+ IP addresses across multiple countries, traditional IP-based blocking proved ineffective. Through deep investigation and collaboration with cloud architects, we discovered the attack originated from only 3 distinct JA3 fingerprints, leading to a revolutionary blocking strategy.',
-                challenge: 'The platform faced a massive DDoS attack generating 100 million requests per second from over 20,000 IP addresses distributed across multiple countries. Traditional IP-based DDoS protection was inadequate as attackers used distributed infrastructure. The challenge was identifying a common pattern among the diverse attack vectors that could be used for effective blocking without impacting legitimate users.',
-                approach: 'Conducted deep traffic analysis to identify that despite the attack coming from 20,000+ IPs, all malicious traffic shared only 3 distinct JA3 fingerprints (65M, 15M, and 7M RPS respectively). JA3 is a method for creating SSL/TLS client fingerprints based on the client\'s Hello packet, including cipher suites, extensions, and curves. Since Google Cloud Platform and Terraform didn\'t support JA3-based rules at the time, we submitted a product request to Google and contributed a merge request to the Terraform provider upstream to enable JA3 enforcement in Cloud Armor.',
-                technologies: ['Google Cloud Armor', 'JA3 Fingerprinting', 'Terraform Provider Development', 'SSL/TLS Analysis', 'DDoS Mitigation', 'Open Source Contribution'],
-                achievements: [
-                    'Successfully mitigated 100M+ RPS DDoS attack using innovative JA3 approach',
-                    'Contributed to Terraform GCP provider to enable JA3-based Cloud Armor rules',
-                    'Achieved complete blocking of future DDoS attacks using fingerprint-based detection',
-                    'Collaborated with Google Cloud team to implement new security features'
-                ],
-                skills: ['DDoS Mitigation', 'SSL/TLS Analysis', 'Open Source Contribution', 'Cloud Security Architecture'],
-                links: {}
-            },
-            '6': {
-                name: 'Security Asset Management Dashboard - GoJek',
-                type: 'enterprise',
-                overview: 'Developed a comprehensive security visibility platform at GoJek that automatically aggregates and correlates cloud infrastructure and API gateway data. This dashboard provided critical security insights during the post-merger period, enabling the security team to maintain visibility across the expanded infrastructure landscape and make data-driven security decisions.',
-                challenge: 'Following the merger, GoJek faced significant challenges in maintaining security visibility across a rapidly expanding and complex infrastructure. The security team needed to answer critical questions: How many VMs are internal vs external? Which assets have completed vulnerability assessments? How many APIs have undergone penetration testing? What is the status of security issues and their remediation progress? Manual tracking was no longer feasible at scale.',
-                approach: 'Built an automated dashboard that integrates multiple data sources to provide real-time security visibility. The system automatically fetches VM and computing assets from Google Cloud Platform, retrieves API inventory from Kong API Gateway, and correlates this data with security assessment records. Implemented automated linking between identified issues and their corresponding merge requests for remediation tracking.',
-                technologies: ['Google Cloud Platform API', 'Kong API Gateway', 'Dashboard Development', 'Cloud Security', 'Asset Discovery', 'API Integration'],
-                achievements: [
-                    'Provided unified security visibility across post-merger infrastructure',
-                    'Automated asset discovery and classification for VMs and APIs',
-                    'Enabled data-driven security decision making with real-time insights',
-                    'Streamlined security assessment tracking and remediation workflows'
-                ],
-                skills: ['Cloud Security', 'Product Security', 'Dashboard Development', 'API Integration'],
-                links: {}
-            }
-        };
-
-        // Open modal with project details
-        function openProjectModal(projectId) {
-            const project = projectData[projectId];
-            if (!project) return;
-
-            let linksHtml = '';
-            if (project.links.github) {
-                linksHtml += `<a href="${project.links.github}" target="_blank" rel="noopener" class="modal-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>`;
-            }
-            if (project.links.demo) {
-                linksHtml += `<a href="${project.links.demo}" target="_blank" rel="noopener" class="modal-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                        <polyline points="15,3 21,3 21,9"/>
-                        <line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    Live Demo
-                </a>`;
-            }
-            if (project.links.article) {
-                const isLinkedIn = project.links.article.includes('linkedin.com');
-                const iconPath = isLinkedIn 
-                    ? "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    : "M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z";
-                const linkText = isLinkedIn ? "View on LinkedIn" : "Read on Medium";
-                
-                linksHtml += `<a href="${project.links.article}" target="_blank" rel="noopener" class="modal-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="${iconPath}"/>
-                    </svg>
-                    ${linkText}
-                </a>`;
-            }
-
-            modalBody.innerHTML = `
-                <div class="modal-header">
-                    <h2>${project.name}</h2>
-                    <span class="project-type ${project.type}">${project.type === 'enterprise' ? 'Enterprise' : project.type === 'article' ? 'Published Work' : project.type === 'personal' ? 'Personal Project' : 'Public'}</span>
-                </div>
-                
-                <div class="modal-section">
-                    <h3>Overview</h3>
-                    <p>${project.overview}</p>
-                </div>
-                
-                <div class="modal-section">
-                    <h3>Challenge</h3>
-                    <p>${project.challenge}</p>
-                </div>
-                
-                <div class="modal-section">
-                    <h3>Approach</h3>
-                    <p>${project.approach}</p>
-                </div>
-                
-                <div class="modal-section">
-                    <h3>Technologies Used</h3>
-                    <div class="modal-tags">
-                        ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                    </div>
-                </div>
-                
-                <div class="modal-section">
-                    <h3>Key Achievements</h3>
-                    <ul class="modal-achievements">
-                        ${project.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                <div class="project-details" id="threat-intel-details" style="display: none;">
+                    <h4>Technical Details</h4>
+                    <p><strong>Challenge:</strong> Commercial CTI platforms were enterprise-focused and inaccessible to smaller teams. Needed scalable solution handling massive data volumes while providing actionable intelligence.</p>
+                    <p><strong>Approach:</strong> Collaborated to build modular system: data ingestion with load-balanced workers, discovery pipeline for automated monitoring, analysis engine for credential validation. Implemented efficient queuing for high-volume streams.</p>
+                    <p><strong>Technologies:</strong> Python, NLP Classification, Data Pipeline Architecture, Load Balancing, Queue Management</p>
+                    <p><strong>Results:</strong></p>
+                    <ul>
+                        <li>Processes 500GB+ daily with 3TB peaks using efficient pipelines</li>
+                        <li>Helped organizations identify exposed VPN credentials</li>
+                        <li>Enabled proactive security measures preventing unauthorized access</li>
+                        <li>Built architecture handling 790k+ records in single searches</li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="project">
+                <h3>ja3-ddos-mitigation <span class="metric">100M RPS stopped</span> <button class="toggle-btn" data-project="ddos-system">[+]</button></h3>
+                <p>GovTech platform under 100M RPS attack from 20k+ IPs. Traditional IP blocking useless. Deep analysis revealed all traffic shared 3 JA3 fingerprints. Contributed JA3 support to Terraform GCP provider.</p>
+                <p><strong>Stack:</strong> Google Cloud Armor, JA3 fingerprinting, Terraform</p>
+                <p><strong>Impact:</strong> Completely stopped attack, now blocks similar attacks automatically</p>
                 
-                <div class="modal-section">
-                    <h3>Skills Demonstrated</h3>
-                    <div class="modal-tags">
-                        ${project.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
-                    </div>
+                <div class="project-details" id="ddos-system-details" style="display: none;">
+                    <h4>Technical Details</h4>
+                    <p><strong>Challenge:</strong> Platform under massive DDoS (100M RPS from 20,000+ IPs across countries). Traditional IP-based blocking ineffective due to distributed infrastructure.</p>
+                    <p><strong>Approach:</strong> Deep traffic analysis revealed 3 distinct JA3 fingerprints despite 20,000+ source IPs. JA3 creates SSL/TLS client fingerprints from Hello packets. Contributed to Terraform GCP provider for JA3 enforcement.</p>
+                    <p><strong>Technologies:</strong> Google Cloud Armor, JA3 Fingerprinting, Terraform Provider Development, SSL/TLS Analysis, DDoS Mitigation</p>
+                    <p><strong>Results:</strong></p>
+                    <ul>
+                        <li>Successfully mitigated 100M+ RPS attack using JA3 approach</li>
+                        <li>Contributed JA3 support to Terraform GCP provider</li>
+                        <li>Achieved complete blocking of future attacks via fingerprinting</li>
+                        <li>Collaborated with Google Cloud team on security features</li>
+                    </ul>
                 </div>
+            </div>
+
+            <div class="project">
+                <h3>sast-llm-judge <a href="https://github.com/jjoelk/sast-llm-judge" class="code-link">[code]</a> <button class="toggle-btn" data-project="multi-llm">[+]</button></h3>
+                <p>SAST tools flood teams with false positives. Built multi-LLM system: Claude Code traces data flows, DeepSeek/OpenAI assess independently, Claude judges findings. Generates JIRA tickets with actual exploitation paths.</p>
+                <p><strong>Stack:</strong> Claude API, DeepSeek, OpenAI, Python</p>
+                <p><strong>Impact:</strong> Tested on OWASP NodeGoat/Juice Shop, identifies real vulns while filtering noise</p>
                 
-                ${linksHtml ? `<div class="modal-section">
-                    <h3>External Links</h3>
-                    <div class="modal-links">
-                        ${linksHtml}
-                    </div>
-                </div>` : ''}
-            `;
+                <div class="project-details" id="multi-llm-details" style="display: none;">
+                    <h4>Technical Details</h4>
+                    <p><strong>Challenge:</strong> Traditional SAST tools flood teams with false positives, creating "security fatigue." Tools flag issues without understanding execution paths or actual exploitability.</p>
+                    <p><strong>Approach:</strong> Four-component pipeline: Claude Code analyzes codebase and traces data flows, DeepSeek and OpenAI assess independently, Claude API judges findings. Produces detailed tickets with exploitation paths.</p>
+                    <p><strong>Technologies:</strong> Claude Code API, DeepSeek LLM, OpenAI GPT, Python, Static Analysis, Multi-LLM Architecture</p>
+                    <p><strong>Results:</strong></p>
+                    <ul>
+                        <li>Successfully tested against OWASP NodeGoat and Juice Shop</li>
+                        <li>Identified sophisticated vulnerabilities while filtering noise</li>
+                        <li>Generated JIRA-ready tickets with remediation steps</li>
+                        <li>Demonstrated context-aware analysis across microservices</li>
+                    </ul>
+                </div>
+            </div>
 
-            modal.classList.add('active');
-            modal.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-        }
+            <div class="project">
+                <h3>security-asset-dashboard <span class="metric">GoJek post-merger</span> <button class="toggle-btn" data-project="asset-dashboard">[+]</button></h3>
+                <p>Built comprehensive security visibility platform at GoJek integrating cloud infrastructure and API gateway data. Provided critical security insights during post-merger period for asset management.</p>
+                <p><strong>Stack:</strong> GCP APIs, Kong API Gateway, Dashboard development</p>
+                <p><strong>Impact:</strong> Unified security visibility across post-merger infrastructure</p>
+                
+                <div class="project-details" id="asset-dashboard-details" style="display: none;">
+                    <h4>Technical Details</h4>
+                    <p><strong>Challenge:</strong> Following the merger, GoJek faced significant challenges maintaining security visibility across rapidly expanding infrastructure. Security team needed answers: How many VMs are internal vs external? Which assets completed vulnerability assessments? How many APIs underwent pen testing?</p>
+                    <p><strong>Approach:</strong> Built automated dashboard integrating multiple data sources for real-time security visibility. System automatically fetches VM and computing assets from GCP, retrieves API inventory from Kong API Gateway, correlates with security assessment records. Implemented automated linking between issues and remediation merge requests.</p>
+                    <p><strong>Technologies:</strong> Google Cloud Platform API, Kong API Gateway, Dashboard Development, Cloud Security, Asset Discovery, API Integration</p>
+                    <p><strong>Results:</strong></p>
+                    <ul>
+                        <li>Provided unified security visibility across post-merger infrastructure</li>
+                        <li>Automated asset discovery and classification for VMs and APIs</li>
+                        <li>Enabled data-driven security decision making with real-time insights</li>
+                        <li>Streamlined security assessment tracking and remediation workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        // Close modal
-        function closeModal() {
-            modal.classList.remove('active');
-            modal.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = '';
-        }
+        <section id="tools">
+            <h2>$ which tools</h2>
+            <p><strong>Languages:</strong> Go, Python, JavaScript</p>
+            <p><strong>Infrastructure:</strong> Kubernetes, GCP, Terraform</p>
+            <p><strong>Security:</strong> Detection engineering, threat hunting, red team tools</p>
+            <p><strong>Data:</strong> Kafka, PostgreSQL, Redis, Prometheus</p>
+        </section>
 
-        // Event listeners
-        projectCards.forEach(card => {
-            const detailsBtn = card.querySelector('.project-details-btn');
-            if (detailsBtn) {
-                detailsBtn.addEventListener('click', () => {
-                    const projectId = card.getAttribute('data-project');
-                    openProjectModal(projectId);
-                });
+        <section id="creds">
+            <h2>$ cat /credentials</h2>
+            <p><strong>Certs:</strong> OSCP, OSWE, CREST CRT/CPSA</p>
+            <p><strong>Education:</strong> MBA (Quantic), CS (BINUS)</p>
+        </section>
+
+        <footer>
+            <p>Currently: Staff Security Engineer @ DKATALIS (Bank Jago)</p>
+            <p>Focus: Anti-fraud systems, reverse engineering, detection engineering</p>
+        </footer>
+    </main>
+
+    <script>
+        // Toggle project details with keyboard support
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            // Add ARIA attributes
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('tabindex', '0');
+            
+            const projectId = btn.getAttribute('data-project');
+            const details = document.getElementById(projectId + '-details');
+            
+            if (details) {
+                details.setAttribute('aria-hidden', 'true');
+                btn.setAttribute('aria-controls', projectId + '-details');
+                btn.setAttribute('aria-label', `Toggle details for ${projectId}`);
+            }
+            
+            function toggleDetails() {
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                    btn.textContent = '[-]';
+                    btn.setAttribute('aria-expanded', 'true');
+                    details.setAttribute('aria-hidden', 'false');
+                } else {
+                    details.style.display = 'none';
+                    btn.textContent = '[+]';
+                    btn.setAttribute('aria-expanded', 'false');
+                    details.setAttribute('aria-hidden', 'true');
+                }
+            }
+            
+            // Click handler
+            btn.addEventListener('click', toggleDetails);
+            
+            // Keyboard handler
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleDetails();
+                }
+            });
+        });
+        
+        // Add keyboard navigation for links
+        document.addEventListener('keydown', (e) => {
+            // Skip links with Alt+S
+            if (e.altKey && e.key === 's') {
+                e.preventDefault();
+                const firstToggle = document.querySelector('.toggle-btn');
+                if (firstToggle) firstToggle.focus();
             }
         });
-
-        modalClose.addEventListener('click', closeModal);
-        modalBackdrop.addEventListener('click', closeModal);
-
-        // Close modal on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                closeModal();
-            }
+        
+        // Improve focus management
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add skip link
+            const skipLink = document.createElement('a');
+            skipLink.href = '#projects';
+            skipLink.textContent = 'Skip to projects';
+            skipLink.className = 'skip-link';
+            skipLink.style.cssText = `
+                position: absolute;
+                top: -40px;
+                left: 6px;
+                background: #000;
+                color: #fff;
+                padding: 8px;
+                text-decoration: none;
+                z-index: 1000;
+                border-radius: 3px;
+            `;
+            
+            skipLink.addEventListener('focus', () => {
+                skipLink.style.top = '6px';
+            });
+            
+            skipLink.addEventListener('blur', () => {
+                skipLink.style.top = '-40px';
+            });
+            
+            document.body.insertBefore(skipLink, document.body.firstChild);
         });
     </script>
 </body>
