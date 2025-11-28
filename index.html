@@ -3,234 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jeremyah Joel - Staff Security Engineer">
-    <title>Jeremyah Joel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jeremyah Joel - Security Researcher</title>
+    <meta name="description" content="Security researcher finding vulnerabilities before attackers do. OSCP, OSWE, CREST certified.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafaf9;
+            --text: #1a1a1a;
+            --text-muted: #404040;
+            --accent: #2d6a2d;
+            --border: #d4d4d4;
+            --code-bg: #f5f5f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 2.5rem 1.25rem;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .name-line {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 0.6rem;
+            height: 1.25rem;
+            background-color: var(--accent);
+            animation: blink 1s step-end infinite;
+            vertical-align: text-bottom;
+            margin-left: 0.25rem;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .title {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .contact-links a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.03em;
+            text-transform: lowercase;
+        }
+
+        .section-header::before {
+            content: '$ ';
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* About */
+        .about p {
+            margin-bottom: 1.1rem;
+            font-weight: 400;
+        }
+
+        .about p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about strong {
+            font-weight: 600;
+        }
+
+        /* Skills row */
+        .skills-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .skills-row span::before {
+            content: '>';
+            margin-right: 0.4rem;
+            color: var(--border);
+        }
+
+        /* Credentials */
+        .credentials {
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+
+        .credentials p {
+            margin-bottom: 0.4rem;
+        }
+
+        .credentials strong {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Writing list */
+        .writing-list {
+            list-style: none;
+        }
+
+        .writing-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .writing-item:last-child {
+            border-bottom: none;
+        }
+
+        .writing-title {
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            line-height: 1.4;
+        }
+
+        .writing-title a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+        }
+
+        .writing-title a:hover {
+            color: var(--accent);
+        }
+
+        .writing-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Projects */
+        .project-list {
+            list-style: none;
+        }
+
+        .project-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .project-metrics {
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        .project-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+            line-height: 1.65;
+            font-weight: 400;
+        }
+
+        .project-achievement {
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .project-achievement strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .project-stack {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background-color: var(--code-bg);
+            padding: 0.35rem 0.6rem;
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        .project-stack::before {
+            content: 'stack: ';
+            color: var(--border);
+            font-weight: 400;
+        }
+
+        .project-link {
+            font-size: 0.8rem;
+            margin-left: 0.75rem;
+        }
+
+        .project-link a {
+            color: var(--text-muted);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .project-link a:hover {
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.25rem;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 0.35rem;
+            }
+
+            .skills-row {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+
+            .project-link {
+                display: block;
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .cursor {
+                animation: none;
+                opacity: 1;
+            }
+        }
+
+        /* Focus styles */
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <div class="container">
         <header>
-            <h1>Jeremyah Joel</h1>
-            <p>Staff Security Engineer @ DKATALIS</p>
-            <p>Previously: GovTech (53M users), GoTO (30M users)</p>
-            <p>joeljeremyah@gmail.com | <a href="https://www.linkedin.com/in/jeremyahjoel">linkedin</a> | <a href="https://jo14.medium.com">writing</a></p>
+            <div class="name-line">
+                <h1>Jeremyah Joel</h1>
+                <span class="cursor" aria-hidden="true"></span>
+            </div>
+            <p class="title">Security Researcher</p>
+            <nav class="contact-links" aria-label="Contact">
+                <a href="mailto:joeljeremyah@gmail.com">joeljeremyah@gmail.com</a>
+                <a href="https://linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/jjoelk" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://jo14.medium.com" target="_blank" rel="noopener">Blog</a>
+            </nav>
         </header>
 
-        <section id="current">
-            <h2>$ whoami</h2>
-            <p>I break things professionally, then fix them. Currently stopping fraud at Bank Jago. Previously kept 53M government users secure.</p>
-            <p>OSCP/OSWE certified. Built systems processing 500GB+ threat data daily. Found bugs Google didn't know about.</p>
-        </section>
+        <main>
+            <section class="about">
+                <h2 class="section-header">whoami</h2>
+                <p>Security Engineer @ <strong>Dkatalis</strong>. I find vulnerabilities before attackers do.</p>
+                <p>Previously secured platforms at <strong>Gojek</strong> (30M+ users) and <strong>GovTech Edu</strong> under Ministry of Education, Culture, Research and Technology (50M+ users).</p>
+                <p>Discovered a vulnerability in Google Cloud's firewall product that affected users worldwide&mdash;Google patched it globally. Earned $50,000+ in bug bounties by proving payment systems could be exploited.</p>
+                <p>Beyond breaking things, I build them: threat intelligence pipelines, AI-assisted code review systems, and security automation that scales. I write about what I learn.</p>
+            </section>
 
-
-        <section id="writing">
-            <h2>$ cat /writing</h2>
-            
-            <div class="post">
-                <strong>2024-10-15</strong> | <a href="https://medium.com/govtech-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14">Google Cloud Armor 0-Day Discovery</a>
-                <br>Found critical HTTP/2 vuln affecting all Cloud Armor users. Google patched it.
-            </div>
-
-            <div class="post">
-                <strong>2024-08-22</strong> | <a href="https://jo14.medium.com/beyond-sast-building-a-multi-llm-judge-for-context-aware-security-analysis-86f6783e661d">Multi-LLM Security Analysis</a>
-                <br>Why SAST sucks and how AI can fix false positives.
-            </div>
-
-            <div class="post">
-                <strong>2024-06-10</strong> | <a href="https://medium.com/govtech-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c">Detection Engineering at Scale</a>
-                <br>Building detection systems for government platforms.
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>$ ls -la /projects</h2>
-            
-            <div class="project">
-                <h3>threat-intel-platform <span class="metric">500GB+/day</span> <button class="toggle-btn" data-project="threat-intel">[+]</button></h3>
-                <p>Built distributed CTI system with collaborators. Processes credential dumps, identifies exposures, prevents breaches. Found entire org's VPN creds in paste before attackers did.</p>
-                <p><strong>Stack:</strong> Python, distributed queues, NLP classification</p>
-                <p><strong>Impact:</strong> Processes 500GB+ daily, prevented multiple unauthorized access attempts</p>
-                
-                <div class="project-details" id="threat-intel-details" style="display: none;">
-                    <h4>Technical Details</h4>
-                    <p><strong>Challenge:</strong> Commercial CTI platforms were enterprise-focused and inaccessible to smaller teams. Needed scalable solution handling massive data volumes while providing actionable intelligence.</p>
-                    <p><strong>Approach:</strong> Collaborated to build modular system: data ingestion with load-balanced workers, discovery pipeline for automated monitoring, analysis engine for credential validation. Implemented efficient queuing for high-volume streams.</p>
-                    <p><strong>Technologies:</strong> Python, NLP Classification, Data Pipeline Architecture, Load Balancing, Queue Management</p>
-                    <p><strong>Results:</strong></p>
-                    <ul>
-                        <li>Processes 500GB+ daily with 3TB peaks using efficient pipelines</li>
-                        <li>Helped organizations identify exposed VPN credentials</li>
-                        <li>Enabled proactive security measures preventing unauthorized access</li>
-                        <li>Built architecture handling 790k+ records in single searches</li>
-                    </ul>
+            <section>
+                <h2 class="section-header">skills</h2>
+                <div class="skills-row">
+                    <span>Code Review</span>
+                    <span>Security Automation</span>
+                    <span>Penetration Testing</span>
+                    <span>Cloud Security</span>
                 </div>
-            </div>
+            </section>
 
-            <div class="project">
-                <h3>ja3-ddos-mitigation <span class="metric">100M RPS stopped</span> <button class="toggle-btn" data-project="ddos-system">[+]</button></h3>
-                <p>GovTech platform under 100M RPS attack from 20k+ IPs. Traditional IP blocking useless. Deep analysis revealed all traffic shared 3 JA3 fingerprints. Contributed JA3 support to Terraform GCP provider.</p>
-                <p><strong>Stack:</strong> Google Cloud Armor, JA3 fingerprinting, Terraform</p>
-                <p><strong>Impact:</strong> Completely stopped attack, now blocks similar attacks automatically</p>
-                
-                <div class="project-details" id="ddos-system-details" style="display: none;">
-                    <h4>Technical Details</h4>
-                    <p><strong>Challenge:</strong> Platform under massive DDoS (100M RPS from 20,000+ IPs across countries). Traditional IP-based blocking ineffective due to distributed infrastructure.</p>
-                    <p><strong>Approach:</strong> Deep traffic analysis revealed 3 distinct JA3 fingerprints despite 20,000+ source IPs. JA3 creates SSL/TLS client fingerprints from Hello packets. Contributed to Terraform GCP provider for JA3 enforcement.</p>
-                    <p><strong>Technologies:</strong> Google Cloud Armor, JA3 Fingerprinting, Terraform Provider Development, SSL/TLS Analysis, DDoS Mitigation</p>
-                    <p><strong>Results:</strong></p>
-                    <ul>
-                        <li>Successfully mitigated 100M+ RPS attack using JA3 approach</li>
-                        <li>Contributed JA3 support to Terraform GCP provider</li>
-                        <li>Achieved complete blocking of future attacks via fingerprinting</li>
-                        <li>Collaborated with Google Cloud team on security features</li>
-                    </ul>
-                </div>
-            </div>
+            <section class="credentials">
+                <h2 class="section-header">credentials</h2>
+                <p><strong>Certs:</strong> OSCP, OSWE, CREST CRT/CPSA</p>
+                <p><strong>Education:</strong> MBA (Quantic), Computer Science (BINUS)</p>
+            </section>
 
-            <div class="project">
-                <h3>sast-llm-judge <a href="https://github.com/jjoelk/sast-llm-judge" class="code-link">[code]</a> <button class="toggle-btn" data-project="multi-llm">[+]</button></h3>
-                <p>SAST tools flood teams with false positives. Built multi-LLM system: Claude Code traces data flows, DeepSeek/OpenAI assess independently, Claude judges findings. Generates JIRA tickets with actual exploitation paths.</p>
-                <p><strong>Stack:</strong> Claude API, DeepSeek, OpenAI, Python</p>
-                <p><strong>Impact:</strong> Tested on OWASP NodeGoat/Juice Shop, identifies real vulns while filtering noise</p>
-                
-                <div class="project-details" id="multi-llm-details" style="display: none;">
-                    <h4>Technical Details</h4>
-                    <p><strong>Challenge:</strong> Traditional SAST tools flood teams with false positives, creating "security fatigue." Tools flag issues without understanding execution paths or actual exploitability.</p>
-                    <p><strong>Approach:</strong> Four-component pipeline: Claude Code analyzes codebase and traces data flows, DeepSeek and OpenAI assess independently, Claude API judges findings. Produces detailed tickets with exploitation paths.</p>
-                    <p><strong>Technologies:</strong> Claude Code API, DeepSeek LLM, OpenAI GPT, Python, Static Analysis, Multi-LLM Architecture</p>
-                    <p><strong>Results:</strong></p>
-                    <ul>
-                        <li>Successfully tested against OWASP NodeGoat and Juice Shop</li>
-                        <li>Identified sophisticated vulnerabilities while filtering noise</li>
-                        <li>Generated JIRA-ready tickets with remediation steps</li>
-                        <li>Demonstrated context-aware analysis across microservices</li>
-                    </ul>
-                </div>
-            </div>
+            <section>
+                <h2 class="section-header">ls writing/</h2>
+                <ul class="writing-list">
+                    <li class="writing-item">
+                        <p class="writing-title"><a href="https://jo14.medium.com/cti-dark-web-credential-monitoring-is-expensive-regret-notification-8254cefa432a" target="_blank" rel="noopener">CTI: Dark Web Credential Monitoring Is Expensive Regret Notification</a></p>
+                        <p class="writing-desc">What processing 500GB of stealer logs daily taught me about threat intelligence. Credential monitoring is sold as early warning but often acts as late-stage notification.</p>
+                    </li>
+                    <li class="writing-item">
+                        <p class="writing-title"><a href="https://jo14.medium.com/they-tested-everything-except-what-failed-the-rp-270-billion-indonesian-securities-firm-breach-21b23b547810" target="_blank" rel="noopener">They Tested Everything Except What Failed</a></p>
+                        <p class="writing-desc">Dissecting the Rp 270 billion ($16.8M) Indonesian securities breach. Four firms compromised despite passing security audits.</p>
+                    </li>
+                    <li class="writing-item">
+                        <p class="writing-title"><a href="https://medium.com/inadigital-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14" target="_blank" rel="noopener">Google Cloud Armor Vulnerability Discovery</a></p>
+                        <p class="writing-desc">Found a critical WAF bypass in Google Cloud Armor. Google patched it globally.</p>
+                    </li>
+                    <li class="writing-item">
+                        <p class="writing-title"><a href="https://jo14.medium.com/beyond-sast-building-a-multi-llm-judge-for-context-aware-security-analysis-86f6783e661d" target="_blank" rel="noopener">Beyond SAST: Building a Multi-LLM Judge</a></p>
+                        <p class="writing-desc">Using multiple LLMs as judges to cut through SAST false positives. Context-aware security analysis that actually finds real bugs.</p>
+                    </li>
+                    <li class="writing-item">
+                        <p class="writing-title"><a href="https://medium.com/govtech-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c" target="_blank" rel="noopener">Strategic Detection Engineering at Scale</a></p>
+                        <p class="writing-desc">Building proactive threat detection for government platforms serving 50M+ users. Detection over reaction.</p>
+                    </li>
+                </ul>
+            </section>
 
-            <div class="project">
-                <h3>security-asset-dashboard <span class="metric">GoJek post-merger</span> <button class="toggle-btn" data-project="asset-dashboard">[+]</button></h3>
-                <p>Built comprehensive security visibility platform at GoJek integrating cloud infrastructure and API gateway data. Provided critical security insights during post-merger period for asset management.</p>
-                <p><strong>Stack:</strong> GCP APIs, Kong API Gateway, Dashboard development</p>
-                <p><strong>Impact:</strong> Unified security visibility across post-merger infrastructure</p>
-                
-                <div class="project-details" id="asset-dashboard-details" style="display: none;">
-                    <h4>Technical Details</h4>
-                    <p><strong>Challenge:</strong> Following the merger, GoJek faced significant challenges maintaining security visibility across rapidly expanding infrastructure. Security team needed answers: How many VMs are internal vs external? Which assets completed vulnerability assessments? How many APIs underwent pen testing?</p>
-                    <p><strong>Approach:</strong> Built automated dashboard integrating multiple data sources for real-time security visibility. System automatically fetches VM and computing assets from GCP, retrieves API inventory from Kong API Gateway, correlates with security assessment records. Implemented automated linking between issues and remediation merge requests.</p>
-                    <p><strong>Technologies:</strong> Google Cloud Platform API, Kong API Gateway, Dashboard Development, Cloud Security, Asset Discovery, API Integration</p>
-                    <p><strong>Results:</strong></p>
-                    <ul>
-                        <li>Provided unified security visibility across post-merger infrastructure</li>
-                        <li>Automated asset discovery and classification for VMs and APIs</li>
-                        <li>Enabled data-driven security decision making with real-time insights</li>
-                        <li>Streamlined security assessment tracking and remediation workflows</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="tools">
-            <h2>$ which tools</h2>
-            <p><strong>Languages:</strong> Go, Python, JavaScript</p>
-            <p><strong>Infrastructure:</strong> Kubernetes, GCP, Terraform</p>
-            <p><strong>Security:</strong> Detection engineering, threat hunting, red team tools</p>
-            <p><strong>Data:</strong> Kafka, PostgreSQL, Redis, Prometheus</p>
-        </section>
-
-        <section id="creds">
-            <h2>$ cat /credentials</h2>
-            <p><strong>Certs:</strong> OSCP, OSWE, CREST CRT/CPSA</p>
-            <p><strong>Education:</strong> MBA (Quantic), CS (BINUS)</p>
-        </section>
+            <section>
+                <h2 class="section-header">ls projects/</h2>
+                <ul class="project-list">
+                    <li class="project-item">
+                        <p class="project-name">Threat Intelligence Platform</p>
+                        <p class="project-metrics">500GB+/day processing &bull; 3TB peaks &bull; 790k+ records per search</p>
+                        <p class="project-desc">Distributed threat intelligence system built to handle massive data volumes that commercial platforms couldn't address affordably. Multi-component architecture with load-balanced data ingestion, automated discovery pipeline for continuous monitoring, and analysis engine for credential validation.</p>
+                        <p class="project-achievement"><strong>Key win:</strong> Identified exposed VPN credentials before attackers accessed them, enabling proactive security intervention.</p>
+                        <span class="project-stack">Python, NLP Classification, Data Pipeline Architecture, Queue Management</span>
+                    </li>
+                    <li class="project-item">
+                        <p class="project-name">JA3 DDoS Mitigation System</p>
+                        <p class="project-metrics">Stopped 65M+ req/sec from 20,000+ distributed IPs</p>
+                        <p class="project-desc">Solution addressing a government platform's massive DDoS attack where traditional IP blocking proved ineffective due to the attack's distributed nature. Deep traffic analysis revealed SSL/TLS client fingerprint patterns.</p>
+                        <p class="project-achievement"><strong>Key win:</strong> Discovered all attack traffic used only 3 JA3 fingerprints despite thousands of source IPs&mdash;enabled complete attack blockade. Contributed JA3 support to Terraform's GCP provider for automated future prevention.</p>
+                        <span class="project-stack">Google Cloud Armor, JA3 Fingerprinting, Terraform, SSL/TLS Analysis</span>
+                    </li>
+                    <li class="project-item">
+                        <p class="project-name">SAST-LLM Judge</p>
+                        <p class="project-metrics">Multi-AI pipeline for real vulnerability detection</p>
+                        <p class="project-desc">Multi-AI system reducing false positives in static analysis security testing. Traditional SAST tools flood teams with noise&mdash;this system actually understands context. Pipeline: Claude Code analyzes codebase and traces data flows &rarr; DeepSeek and OpenAI assess independently &rarr; Claude API judges findings &rarr; Generates JIRA tickets with exploitation paths.</p>
+                        <p class="project-achievement"><strong>Tested against:</strong> OWASP NodeGoat and Juice Shop vulnerability test suites.</p>
+                        <span class="project-stack">Claude API, DeepSeek, OpenAI, Python</span>
+                        <span class="project-link"><a href="https://github.com/jjoelk/sast-llm-judge" target="_blank" rel="noopener">github.com/jjoelk/sast-llm-judge</a></span>
+                    </li>
+                    <li class="project-item">
+                        <p class="project-name">Security Asset Dashboard</p>
+                        <p class="project-metrics">Post-merger infrastructure visibility at GoTo</p>
+                        <p class="project-desc">Unified security visibility platform correlating cloud infrastructure and API gateway data. Automated system integrating multiple data sources: fetching VM/computing assets from GCP, retrieving API inventory from Kong, correlating with security assessment records, and linking issues to remediation merge requests.</p>
+                        <p class="project-achievement"><strong>Key questions answered:</strong> VM internal/external classification, vulnerability assessment completion status, API penetration testing coverage.</p>
+                        <span class="project-stack">GCP APIs, Kong API Gateway, Dashboard Development</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
-            <p>Currently: Staff Security Engineer @ DKATALIS (Bank Jago)</p>
-            <p>Focus: Anti-fraud systems, reverse engineering, detection engineering</p>
+            <p>&copy; 2025 Jeremyah Joel</p>
         </footer>
-    </main>
-
-    <script>
-        // Toggle project details with keyboard support
-        document.querySelectorAll('.toggle-btn').forEach(btn => {
-            // Add ARIA attributes
-            btn.setAttribute('aria-expanded', 'false');
-            btn.setAttribute('tabindex', '0');
-            
-            const projectId = btn.getAttribute('data-project');
-            const details = document.getElementById(projectId + '-details');
-            
-            if (details) {
-                details.setAttribute('aria-hidden', 'true');
-                btn.setAttribute('aria-controls', projectId + '-details');
-                btn.setAttribute('aria-label', `Toggle details for ${projectId}`);
-            }
-            
-            function toggleDetails() {
-                if (details.style.display === 'none' || details.style.display === '') {
-                    details.style.display = 'block';
-                    btn.textContent = '[-]';
-                    btn.setAttribute('aria-expanded', 'true');
-                    details.setAttribute('aria-hidden', 'false');
-                } else {
-                    details.style.display = 'none';
-                    btn.textContent = '[+]';
-                    btn.setAttribute('aria-expanded', 'false');
-                    details.setAttribute('aria-hidden', 'true');
-                }
-            }
-            
-            // Click handler
-            btn.addEventListener('click', toggleDetails);
-            
-            // Keyboard handler
-            btn.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleDetails();
-                }
-            });
-        });
-        
-        // Add keyboard navigation for links
-        document.addEventListener('keydown', (e) => {
-            // Skip links with Alt+S
-            if (e.altKey && e.key === 's') {
-                e.preventDefault();
-                const firstToggle = document.querySelector('.toggle-btn');
-                if (firstToggle) firstToggle.focus();
-            }
-        });
-        
-        // Improve focus management
-        document.addEventListener('DOMContentLoaded', () => {
-            // Add skip link
-            const skipLink = document.createElement('a');
-            skipLink.href = '#projects';
-            skipLink.textContent = 'Skip to projects';
-            skipLink.className = 'skip-link';
-            skipLink.style.cssText = `
-                position: absolute;
-                top: -40px;
-                left: 6px;
-                background: #000;
-                color: #fff;
-                padding: 8px;
-                text-decoration: none;
-                z-index: 1000;
-                border-radius: 3px;
-            `;
-            
-            skipLink.addEventListener('focus', () => {
-                skipLink.style.top = '6px';
-            });
-            
-            skipLink.addEventListener('blur', () => {
-                skipLink.style.top = '-40px';
-            });
-            
-            document.body.insertBefore(skipLink, document.body.firstChild);
-        });
-    </script>
+    </div>
 </body>
 </html>
