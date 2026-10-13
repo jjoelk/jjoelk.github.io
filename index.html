@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3efe4">
-  <title>Jeremyah Joel — Notes from the Lab</title>
-  <meta name="description" content="Notes from Jeremyah Joel's small research lab: AI, security, the evidence behind an answer, and the decisions behind a design.">
+  <title>Jeremyah Joel — Security Research & AI Engineering</title>
+  <meta name="description" content="Security researcher and founding engineer at VigilX. AI experiments, reported security findings, and a Google Cloud Armor investigation that led to a global patch.">
   <link rel="canonical" href="https://jjoelk.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jeremyah Joel — Notes from the Lab">
-  <meta property="og:description" content="AI, security, and the decisions behind the work. Notes and experiments from a small personal lab.">
+  <meta property="og:title" content="Jeremyah Joel — Security Research & AI Engineering">
+  <meta property="og:description" content="Founding engineer, security researcher, and AI builder. The ideas, decisions, and results behind the work.">
   <meta property="og:url" content="https://jjoelk.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -27,13 +27,14 @@
 
   <main id="main">
     <section class="introduction page-width" id="about" aria-labelledby="name">
-      <p class="overline">AI, security & experiments</p>
+      <p class="overline">Security researcher & founding engineer</p>
       <h1 id="name">Jeremyah Joel<span>.</span></h1>
       <div class="intro-layout">
       <div class="intro-content">
       <div class="intro-copy">
-        <p>In my small personal lab, I research AI and security and build <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project.</p>
-        <p>I write about the decisions underneath that work: what evidence a model missed, which assumption broke a system, and when changing the question led to a better design.</p>
+        <p>In my small personal lab, I research AI and security. As a founding engineer at <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project, I turn that research into tools for investigating complex software.</p>
+        <p>I write about the decisions behind that work: what evidence a model missed, which assumption broke a system, and when changing the question led to a better design.</p>
+        <p class="intro-note">With the GovTech Edu team, I helped investigate a <a href="#armor-title">Google Cloud Armor flaw that led to a global patch</a>. More recently, my research has found high-impact issues in heavily audited open-source systems.</p>
       </div>
       </div>
       <div class="intro-art" aria-hidden="true"><img src="assets/art/investigation.svg" alt="" width="400" height="400"></div>
@@ -41,13 +42,13 @@
     </section>
 
     <section class="page-section work page-width" id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Notes from the lab</h2>
+      <h2 id="work-title">Research & engineering</h2>
 
       <article class="story" aria-labelledby="vigilx-title">
         <div class="story-copy">
-        <p class="story-kicker">VigilX · AI research</p>
+        <p class="story-kicker">VigilX · Founding engineer</p>
         <h3 id="vigilx-title">A plausible answer is only the beginning.</h3>
-        <p>The hard part of my AI research has become deciding what deserves another call: missing evidence, an interrupted investigation, or a claim that survives scrutiny. These are notes on the system we’re building around those decisions—and where it still falls short. Findings still go through human review.</p>
+        <p>The hard part of my AI research has become deciding where the next model call will help: supplying missing evidence, retrying an interrupted investigation, or challenging a surviving claim. The article follows the system behind those decisions, where it still falls short, and why findings need human review.</p>
         <p class="story-source"><a href="https://jo14.medium.com/the-harness-is-the-economics-0f8a13bb8a9e" target="_blank" rel="noopener noreferrer">The harness is the economics <span aria-hidden="true">↗</span></a><time datetime="2026-10-12">October 2026</time></p>
         </div>
         <div class="story-art art-vigilx" aria-hidden="true"><img src="assets/art/evidence.svg" alt="" width="480" height="360" loading="lazy"></div>
@@ -66,12 +67,14 @@
       <article class="story" aria-labelledby="armor-title">
         <div class="story-copy">
         <p class="story-kicker">Google Cloud Armor · Security investigation</p>
-        <h3 id="armor-title">The logs weren’t telling the whole story.</h3>
-        <p>Cloud Armor’s logs made blocked and allowed requests look identical. Our investigation with the GovTech Edu team followed that discrepancy through months of work to a reproducible report, Google’s confirmation of an issue affecting <strong>Classic Application Load Balancers</strong>, and a global patch. The write-up follows how we worked through the missing explanation.</p>
+        <h3 id="armor-title">A Google Cloud Armor firewall flaw, fixed worldwide.</h3>
+        <p>Cloud Armor’s logs made blocked and allowed requests look identical. After months of investigation, our team at GovTech Edu produced a reproducible report. Google confirmed the issue affecting <strong>Classic Application Load Balancers</strong> and released a <strong>global patch</strong>.</p>
         <p class="story-source"><a href="https://medium.com/inadigital-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14" target="_blank" rel="noopener noreferrer">Read the Cloud Armor investigation <span aria-hidden="true">↗</span></a><time datetime="2024-11-04">November 2024</time></p>
         </div>
         <div class="story-art art-armor" aria-hidden="true"><img src="assets/art/boundary.svg" alt="" width="480" height="360" loading="lazy"></div>
       </article>
+
+      <p class="research-summary">My <a href="https://jo14.medium.com/the-harness-is-the-economics-0f8a13bb8a9e" target="_blank" rel="noopener noreferrer">October 2026 research summary</a> covers <strong>15+ reported security findings over six months</strong>, including high-impact issues in heavily audited open-source codebases.</p>
 
       <div class="additional-notes" id="writing" aria-labelledby="notes-title">
         <h3 id="notes-title">Other writing</h3>
