@@ -10,11 +10,12 @@ Run `python3 -m http.server 4173` from this directory, then open http://localhos
 
 ## Structure
 
-The page introduces Jeremyah's current work and personal research, then presents three selected stories with their article links. Two additional notes add different topics. Career background and education follow, with contact last.
+The page introduces Jeremyah's current work and personal research, then presents three illustrated stories with their article links. Two additional notes add different topics. Career background and education follow, with contact last. Warm paper, forest green, serif display type, and original vector artwork give the page its visual identity.
 
 - `index.html`: biography, selected work and writing, background, and contact.
 - `styles.css`: responsive typography, layout, keyboard focus, reduced motion, and print styles.
 - `assets/Jeremyah-Joel-CV.pdf`: current public CV.
+- `assets/art/`: original decorative SVG illustrations. The adjacent copy carries the meaning and evidence; artwork is hidden from assistive technology.
 
 ## Content
 

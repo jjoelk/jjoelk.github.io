@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f3ed">
+  <meta name="theme-color" content="#f3efe4">
   <title>Jeremyah Joel — Application Security & AI Research</title>
   <meta name="description" content="I'm Jeremyah Joel, a security engineer at DKATALIS. I work on application security, research AI in my small lab, and write about the tools and investigations behind my work.">
   <link rel="canonical" href="https://jjoelk.github.io/">
@@ -25,38 +25,55 @@
     <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
   </header>
 
-  <main class="page-width" id="main">
-    <section class="introduction" id="about" aria-labelledby="name">
+  <main id="main">
+    <section class="introduction page-width" id="about" aria-labelledby="name">
       <p class="overline">Application security & AI research</p>
       <h1 id="name">Jeremyah Joel<span>.</span></h1>
+      <div class="intro-layout">
+      <div class="intro-content">
       <div class="intro-copy">
-        <p>I’m a security engineer at <strong>DKATALIS</strong>, working on application security and security testing automation. I like following user-controlled input through a system and testing the assumptions that protect it.</p>
-        <p>Outside work, I research AI in my small personal lab and build <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project. I’m interested in how AI can help investigate complex software, and how to check the answers it produces.</p>
+        <p>I’m a security engineer at <strong>DKATALIS</strong>. I test how software can be misused and build tools that help catch security problems.</p>
+        <p>Outside work, I research AI in my small personal lab and build <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project. I’m curious about how AI can help us investigate complex software—and how to check its answers.</p>
         <p>This is where I share some of the tools, investigations, and writing behind that work.</p>
       </div>
       <div class="qualifications" aria-label="Certifications"><span class="muted">Certifications</span><ul><li><abbr title="OffSec Web Expert">OSWE</abbr></li><li><abbr title="OffSec Certified Professional">OSCP</abbr></li><li>CREST CRT</li><li>CREST CPSA</li></ul></div>
-      <div class="profile-links" aria-label="Contact and profiles"><a href="mailto:joeljeremyah@gmail.com">Email</a><a href="https://github.com/jjoelk" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="assets/Jeremyah-Joel-CV.pdf">Download CV <span aria-hidden="true">↗</span></a></div>
+      <div class="profile-links" aria-label="Contact and profiles"><a href="mailto:joeljeremyah@gmail.com">Email</a><a href="https://github.com/jjoelk" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="cv-link" href="assets/Jeremyah-Joel-CV.pdf">Download CV <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="intro-art" aria-hidden="true"><img src="assets/art/investigation.svg" alt="" width="400" height="400"></div>
+      </div>
     </section>
 
-    <section class="page-section" id="work" aria-labelledby="work-title">
+    <section class="page-section work page-width" id="work" aria-labelledby="work-title">
       <h2 id="work-title">Selected work and writing</h2>
 
       <article class="story" aria-labelledby="vigilx-title">
-        <h3 id="vigilx-title">VigilX <span>— AI-assisted security research</span></h3>
-        <p>I’m building tools to help researchers work through large software projects. The work is in the system around the AI: choosing relevant code, checking its suggestions against the real implementation, and keeping evidence and unfinished investigations when a run stops. A person reviews findings before they’re reported.</p>
+        <div class="story-copy">
+        <p class="story-kicker">VigilX · AI research · Our side project</p>
+        <h3 id="vigilx-title">Turning AI suggestions into research people can check.</h3>
+        <p>I’m building tools to help researchers investigate large software projects. That means finding relevant code, checking AI suggestions against the actual software, and saving evidence so unfinished investigations can continue. A person reviews findings before they’re reported.</p>
         <p class="story-source"><a href="https://jo14.medium.com/the-harness-is-the-economics-0f8a13bb8a9e" target="_blank" rel="noopener noreferrer">The harness is the economics <span aria-hidden="true">↗</span></a><time datetime="2026-10-12">October 2026</time></p>
+        </div>
+        <div class="story-art art-vigilx" aria-hidden="true"><img src="assets/art/evidence.svg" alt="" width="480" height="360" loading="lazy"></div>
       </article>
 
       <article class="story" aria-labelledby="shadow-title">
-        <h3 id="shadow-title">SHADOW <span>— searching exposed login records</span></h3>
+        <div class="story-copy">
+        <p class="story-kicker">SHADOW · Data engineering</p>
+        <h3 id="shadow-title">Searching billions of records on a small computer.</h3>
         <p>The challenge was making <strong>4.19 billion canonical credential records</strong> (records of exposed login details) searchable on a <strong>16 GB Mac Mini</strong>. I built indexes in advance so a website-domain lookup doesn’t need to scan the whole collection. One measured warm, single-threaded domain lookup took <strong>0.38 seconds</strong>.</p>
         <p class="story-source"><a href="https://jo14.medium.com/precompute-dont-search-4-19-billion-leaked-credentials-in-0-38-seconds-ffa69365c1c4" target="_blank" rel="noopener noreferrer">Precompute, Don’t Search <span aria-hidden="true">↗</span></a><time datetime="2026-07-23">July 2026</time></p>
+        </div>
+        <div class="story-art art-shadow" aria-hidden="true"><img src="assets/art/archive.svg" alt="" width="480" height="360" loading="lazy"></div>
       </article>
 
       <article class="story" aria-labelledby="armor-title">
-        <h3 id="armor-title">Google Cloud Armor <span>— following an unexplained bypass</span></h3>
+        <div class="story-copy">
+        <p class="story-kicker">Google Cloud Armor · Security investigation</p>
+        <h3 id="armor-title">Following a firewall blind spot to a global fix.</h3>
         <p>At GovTech Edu, some web requests got past Cloud Armor’s protection, but the logged details didn’t explain why. I spent months investigating with the team and helped produce a reproducible report. Google confirmed the issue affecting <strong>Classic Application Load Balancers</strong> and released a global patch.</p>
         <p class="story-source"><a href="https://medium.com/inadigital-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14" target="_blank" rel="noopener noreferrer">Read the Cloud Armor investigation <span aria-hidden="true">↗</span></a><time datetime="2024-11-04">November 2024</time></p>
+        </div>
+        <div class="story-art art-armor" aria-hidden="true"><img src="assets/art/boundary.svg" alt="" width="480" height="360" loading="lazy"></div>
       </article>
 
       <p class="research-summary">Alongside these projects, I reported <strong>15+ security findings</strong> over six months, including high-impact issues in heavily audited open-source codebases, as summarized in October 2026.</p>
@@ -70,7 +87,7 @@
       </div>
     </section>
 
-    <section class="page-section" id="background" aria-labelledby="background-title">
+    <section class="page-section background page-width" id="background" aria-labelledby="background-title">
       <h2 id="background-title">Background</h2>
       <p class="section-intro">My work has taken me through banking, financial products, and national education platforms.</p>
       <div class="career-list">
@@ -83,10 +100,13 @@
       <p class="cv-note">The <a href="assets/Jeremyah-Joel-CV.pdf">full CV</a> has more detail on my roles and qualifications.</p>
     </section>
 
-    <section class="page-section contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Say hello</h2>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="page-width">
+      <p class="overline">Let’s talk</p>
+      <h2 id="contact-title">Good work starts<br>with a conversation<span>.</span></h2>
       <p>For application security, AI research, or a conversation about the work, you can reach me at <a class="email-link" href="mailto:joeljeremyah@gmail.com">joeljeremyah@gmail.com</a>.</p>
       <div class="profile-links"><a href="https://github.com/jjoelk" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://jo14.medium.com/" target="_blank" rel="noopener noreferrer">More writing on Medium</a></div>
+      </div>
     </section>
   </main>
 

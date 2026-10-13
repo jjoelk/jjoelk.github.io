@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#486057" stroke-width=".6"/></pattern></defs>
+  <path fill="#203e35" d="M0 0h480v360H0z"/><path fill="url(#grid)" d="M0 0h480v360H0z"/>
+  <g transform="rotate(-13 189 191)"><path d="M88 47h177v263H88z" fill="#9aa987"/><g stroke="#203e35" stroke-width="3"><path d="M112 90h124M112 113h91M112 143h124M112 166h113M112 196h124M112 219h89M112 249h120"/></g></g>
+  <g transform="rotate(6 258 176)"><path d="M164 33h174v261H164z" fill="#f3efe4"/><path d="M186 70h128" stroke="#203e35" stroke-width="6"/><g stroke="#879781" stroke-width="2"><path d="M186 100h111M186 118h126M186 136h80M186 170h128M186 188h102M186 206h123M186 240h87"/></g><path d="M181 166h136v45H181z" fill="#d9ef86"/><path d="M192 180h94M192 198h116" stroke="#203e35" stroke-width="2"/></g>
+  <circle cx="344" cy="252" r="52" fill="#d9ef86" stroke="#203e35" stroke-width="5"/><path d="M320 254l16 16 34-38" fill="none" stroke="#203e35" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 303c83 29 168 21 207-24" fill="none" stroke="#d9ef86" stroke-width="1.5"/><path d="M412 61v33M396 77h33" stroke="#d9ef86" stroke-width="2"/>
+</svg>
