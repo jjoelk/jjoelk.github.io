@@ -4,53 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3efe4">
-  <title>Jeremyah Joel — Application Security & AI Research</title>
-  <meta name="description" content="I'm Jeremyah Joel, a security engineer at DKATALIS. I work on application security, research AI in my small lab, and write about the tools and investigations behind my work.">
+  <title>Jeremyah Joel — Notes from the Lab</title>
+  <meta name="description" content="Notes from Jeremyah Joel's small research lab: AI, security, the evidence behind an answer, and the decisions behind a design.">
   <link rel="canonical" href="https://jjoelk.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jeremyah Joel — Application Security & AI Research">
-  <meta property="og:description" content="Application security at DKATALIS. AI research in my small personal lab. Selected projects, investigations, and writing.">
+  <meta property="og:title" content="Jeremyah Joel — Notes from the Lab">
+  <meta property="og:description" content="AI, security, and the decisions behind the work. Notes and experiments from a small personal lab.">
   <meta property="og:url" content="https://jjoelk.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Jeremyah Joel","url":"https://jjoelk.github.io/","jobTitle":"Security Engineer","sameAs":["https://www.linkedin.com/in/jeremyahjoel","https://github.com/jjoelk","https://jo14.medium.com/"]}
+  {"@context":"https://schema.org","@type":"Person","name":"Jeremyah Joel","url":"https://jjoelk.github.io/","sameAs":["https://www.linkedin.com/in/jeremyahjoel","https://github.com/jjoelk","https://jo14.medium.com/"]}
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header page-width" id="top">
     <a class="wordmark" href="#top" aria-label="Jeremyah Joel, back to top">jj<span>.</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="#work">Research</a><a href="#writing">Writing</a><a href="#elsewhere">Elsewhere</a></nav>
   </header>
 
   <main id="main">
     <section class="introduction page-width" id="about" aria-labelledby="name">
-      <p class="overline">Application security & AI research</p>
+      <p class="overline">AI, security & experiments</p>
       <h1 id="name">Jeremyah Joel<span>.</span></h1>
       <div class="intro-layout">
       <div class="intro-content">
       <div class="intro-copy">
-        <p>I’m a security engineer at <strong>DKATALIS</strong>. I test how software can be misused and build tools that help catch security problems.</p>
-        <p>Outside work, I research AI in my small personal lab and build <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project. I’m curious about how AI can help us investigate complex software—and how to check its answers.</p>
-        <p>This is where I share some of the tools, investigations, and writing behind that work.</p>
+        <p>In my small personal lab, I research AI and security and build <a href="https://www.vigilx.io/" target="_blank" rel="noopener noreferrer">VigilX</a>, our side project.</p>
+        <p>I write about the decisions underneath that work: what evidence a model missed, which assumption broke a system, and when changing the question led to a better design.</p>
       </div>
-      <div class="qualifications" aria-label="Certifications"><span class="muted">Certifications</span><ul><li><abbr title="OffSec Web Expert">OSWE</abbr></li><li><abbr title="OffSec Certified Professional">OSCP</abbr></li><li>CREST CRT</li><li>CREST CPSA</li></ul></div>
-      <div class="profile-links" aria-label="Contact and profiles"><a href="mailto:joeljeremyah@gmail.com">Email</a><a href="https://github.com/jjoelk" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="cv-link" href="assets/Jeremyah-Joel-CV.pdf">Download CV <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="intro-art" aria-hidden="true"><img src="assets/art/investigation.svg" alt="" width="400" height="400"></div>
       </div>
     </section>
 
     <section class="page-section work page-width" id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Selected work and writing</h2>
+      <h2 id="work-title">Notes from the lab</h2>
 
       <article class="story" aria-labelledby="vigilx-title">
         <div class="story-copy">
-        <p class="story-kicker">VigilX · AI research · Our side project</p>
-        <h3 id="vigilx-title">Turning AI suggestions into research people can check.</h3>
-        <p>I’m building tools to help researchers investigate large software projects. That means finding relevant code, checking AI suggestions against the actual software, and saving evidence so unfinished investigations can continue. A person reviews findings before they’re reported.</p>
+        <p class="story-kicker">VigilX · AI research</p>
+        <h3 id="vigilx-title">A plausible answer is only the beginning.</h3>
+        <p>The hard part of my AI research has become deciding what deserves another call: missing evidence, an interrupted investigation, or a claim that survives scrutiny. These are notes on the system we’re building around those decisions—and where it still falls short. Findings still go through human review.</p>
         <p class="story-source"><a href="https://jo14.medium.com/the-harness-is-the-economics-0f8a13bb8a9e" target="_blank" rel="noopener noreferrer">The harness is the economics <span aria-hidden="true">↗</span></a><time datetime="2026-10-12">October 2026</time></p>
         </div>
         <div class="story-art art-vigilx" aria-hidden="true"><img src="assets/art/evidence.svg" alt="" width="480" height="360" loading="lazy"></div>
@@ -59,8 +56,8 @@
       <article class="story" aria-labelledby="shadow-title">
         <div class="story-copy">
         <p class="story-kicker">SHADOW · Data engineering</p>
-        <h3 id="shadow-title">Searching billions of records on a small computer.</h3>
-        <p>The challenge was making <strong>4.19 billion canonical credential records</strong> (records of exposed login details) searchable on a <strong>16 GB Mac Mini</strong>. I built indexes in advance so a website-domain lookup doesn’t need to scan the whole collection. One measured warm, single-threaded domain lookup took <strong>0.38 seconds</strong>.</p>
+        <h3 id="shadow-title">Why repeat the work on every search?</h3>
+        <p>SHADOW began with a narrower question: which two lookups did the system actually need? That decision shaped a design for <strong>4.19 billion canonical credential records</strong>—records of exposed login details—on a <strong>16 GB Mac Mini</strong>. One warm, single-threaded domain lookup took <strong>0.38 seconds</strong>. The article follows the design, the mistakes it exposed, and the limits that remain.</p>
         <p class="story-source"><a href="https://jo14.medium.com/precompute-dont-search-4-19-billion-leaked-credentials-in-0-38-seconds-ffa69365c1c4" target="_blank" rel="noopener noreferrer">Precompute, Don’t Search <span aria-hidden="true">↗</span></a><time datetime="2026-07-23">July 2026</time></p>
         </div>
         <div class="story-art art-shadow" aria-hidden="true"><img src="assets/art/archive.svg" alt="" width="480" height="360" loading="lazy"></div>
@@ -69,42 +66,26 @@
       <article class="story" aria-labelledby="armor-title">
         <div class="story-copy">
         <p class="story-kicker">Google Cloud Armor · Security investigation</p>
-        <h3 id="armor-title">Following a firewall blind spot to a global fix.</h3>
-        <p>At GovTech Edu, some web requests got past Cloud Armor’s protection, but the logged details didn’t explain why. I spent months investigating with the team and helped produce a reproducible report. Google confirmed the issue affecting <strong>Classic Application Load Balancers</strong> and released a global patch.</p>
+        <h3 id="armor-title">The logs weren’t telling the whole story.</h3>
+        <p>Cloud Armor’s logs made blocked and allowed requests look identical. Our investigation with the GovTech Edu team followed that discrepancy through months of work to a reproducible report, Google’s confirmation of an issue affecting <strong>Classic Application Load Balancers</strong>, and a global patch. The write-up follows how we worked through the missing explanation.</p>
         <p class="story-source"><a href="https://medium.com/inadigital-edu/proactive-cloud-security-learning-from-google-cloud-armor-vulnerability-discovery-855d6b964f14" target="_blank" rel="noopener noreferrer">Read the Cloud Armor investigation <span aria-hidden="true">↗</span></a><time datetime="2024-11-04">November 2024</time></p>
         </div>
         <div class="story-art art-armor" aria-hidden="true"><img src="assets/art/boundary.svg" alt="" width="480" height="360" loading="lazy"></div>
       </article>
 
-      <p class="research-summary">Alongside these projects, I reported <strong>15+ security findings</strong> over six months, including high-impact issues in heavily audited open-source codebases, as summarized in October 2026.</p>
-
-      <div class="additional-notes" aria-labelledby="notes-title">
-        <h3 id="notes-title">More notes</h3>
+      <div class="additional-notes" id="writing" aria-labelledby="notes-title">
+        <h3 id="notes-title">Other writing</h3>
         <ul class="notes-list">
-          <li><a href="https://blog.gopenai.com/llms-are-non-deterministic-your-security-pipeline-shouldnt-be-8e5185922e13" target="_blank" rel="noopener noreferrer">LLMs Are Non-Deterministic. Your Security Pipeline Shouldn’t Be. <span aria-hidden="true">↗</span></a><p>Making AI-assisted security analysis more reliable through focused context and explicit checks.</p><time datetime="2026-03-02">March 2026</time></li>
-          <li><a href="https://medium.com/inadigital-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c" target="_blank" rel="noopener noreferrer">Strategic Detection Engineering: Enhancing Cloud Security for Government Applications <span aria-hidden="true">↗</span></a><p>How our team improved monitoring across older cloud systems with limited visibility and budget.</p><time datetime="2023-12-15">December 2023</time></li>
+          <li><a href="https://blog.gopenai.com/llms-are-non-deterministic-your-security-pipeline-shouldnt-be-8e5185922e13" target="_blank" rel="noopener noreferrer">LLMs Are Non-Deterministic. Your Security Pipeline Shouldn’t Be. <span aria-hidden="true">↗</span></a><p>What needs to stay predictable when the model itself isn’t.</p><time datetime="2026-03-02">March 2026</time></li>
+          <li><a href="https://medium.com/inadigital-edu/strategic-detection-engineering-enhancing-cloud-security-for-government-applications-46b50640511c" target="_blank" rel="noopener noreferrer">Strategic Detection Engineering: Enhancing Cloud Security for Government Applications <span aria-hidden="true">↗</span></a><p>Working out what to watch when visibility and budget are both limited.</p><time datetime="2023-12-15">December 2023</time></li>
         </ul>
       </div>
     </section>
 
-    <section class="page-section background page-width" id="background" aria-labelledby="background-title">
-      <h2 id="background-title">Background</h2>
-      <p class="section-intro">My work has taken me through banking, financial products, and national education platforms.</p>
-      <div class="career-list">
-        <article class="career-entry"><p class="career-date">Aug 2024 — Present</p><div><h3>DKATALIS</h3><p class="job-title">Staff Engineer, Application Security</p><p>I work on security testing, automation, and anti-fraud engineering for digital banking serving 15M+ users. I also support detection and incident response.</p></div></article>
-        <article class="career-entry"><p class="career-date">Oct 2022 — Aug 2024</p><div><h3>GovTech Edu</h3><p class="job-title">Senior Product Security Engineer</p><p>Product reviews and cloud detection across five national education programs serving 53M+ users.</p></div></article>
-        <article class="career-entry"><p class="career-date">2022</p><div><h3>GoTo Group</h3><p class="job-title">Product Security Engineer</p><p>Security during post-merger integration, visibility into cloud systems and web services, and security tooling in the release process.</p></div></article>
-        <article class="career-entry"><p class="career-date">2021 — 2022</p><div><h3>Vantage Point Security</h3><p class="job-title">Security Consultant</p><p>Assessments and client-facing reports for 10+ banks and financial institutions.</p></div></article>
-      </div>
-      <div class="education"><h3>Education</h3><p>Master of Business Administration — Quantic School of Business and Technology</p><p>Bachelor of Computer Science, Cyber Security — BINUS University</p></div>
-      <p class="cv-note">The <a href="assets/Jeremyah-Joel-CV.pdf">full CV</a> has more detail on my roles and qualifications.</p>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
+    <section class="contact" id="elsewhere" aria-labelledby="contact-title">
       <div class="page-width">
-      <p class="overline">Let’s talk</p>
-      <h2 id="contact-title">Good work starts<br>with a conversation<span>.</span></h2>
-      <p>For application security, AI research, or a conversation about the work, you can reach me at <a class="email-link" href="mailto:joeljeremyah@gmail.com">joeljeremyah@gmail.com</a>.</p>
+      <h2 id="contact-title">Elsewhere<span>.</span></h2>
+      <p>Find my writing on Medium, projects on GitHub, or get in touch through LinkedIn.</p>
       <div class="profile-links"><a href="https://github.com/jjoelk" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/jeremyahjoel" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://jo14.medium.com/" target="_blank" rel="noopener noreferrer">More writing on Medium</a></div>
       </div>
     </section>
